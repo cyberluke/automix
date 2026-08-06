@@ -7,7 +7,7 @@ Perceptually-correct crossfading and volume automation:
 - Adaptive curves based on frequency content
 """
 import numpy as np
-from typing import Dict, Tuple, Optional, List
+from typing import Dict, Tuple, List
 
 from src.psychoacoustics import PsychoacousticAnalyzer
 

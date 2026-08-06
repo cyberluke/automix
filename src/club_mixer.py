@@ -493,7 +493,7 @@ def render_club_mix(y_a: np.ndarray,
     plan = plan_transition(grid_a, grid_b, blend_bars=blend_bars, recent_types=recent_types)
 
     N = plan.overlap_samples
-    bar_samp = int(round(plan.bar_dur * sr))
+    int(round(plan.bar_dur * sr))
 
     # --- Overlap segments. ---
     a_t1 = int(round(plan.a_t1_sec * sr))

@@ -10,7 +10,7 @@ import os
 import hashlib
 from collections import OrderedDict
 from pathlib import Path
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional
 import warnings
 from src.utils import get_best_device, get_device_name
 warnings.filterwarnings('ignore')

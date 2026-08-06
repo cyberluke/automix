@@ -8,10 +8,7 @@ Extracts ML-ready training data from mix analyses:
 """
 
 import numpy as np
-import librosa
 from typing import Dict, List, Optional, Tuple
-from pathlib import Path
-import json
 from scipy.optimize import curve_fit
 from scipy.interpolate import interp1d
 
@@ -273,7 +270,7 @@ class TrainingDataExtractor:
             return [0.5] * 32  # Default
         
         lookback_sec = (lookback_bars * 4 * 60) / bpm
-        start_time = max(0, time_sec - lookback_sec)
+        max(0, time_sec - lookback_sec)
         
         # Sample every bar
         bar_duration_sec = (4 * 60) / bpm
@@ -299,7 +296,7 @@ class TrainingDataExtractor:
         times = spectral_curve.get("times_sec", [])
         
         lookback_sec = (lookback_bars * 4 * 60) / bpm
-        start_time = max(0, time_sec - lookback_sec)
+        max(0, time_sec - lookback_sec)
         
         bar_duration_sec = (4 * 60) / bpm
         n_samples = min(lookback_bars, 32)

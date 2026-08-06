@@ -5,7 +5,7 @@ Aligns beats between two songs for smooth rhythmic transitions.
 """
 import numpy as np
 import librosa
-from typing import Tuple, List, Optional
+from typing import Tuple
 
 
 class BeatAligner:

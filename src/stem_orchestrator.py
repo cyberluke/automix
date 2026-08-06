@@ -12,7 +12,7 @@ This module treats stems as musical voices and orchestrates them together.
 import random
 import numpy as np
 import librosa
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, Tuple, Optional
 from scipy import signal
 from scipy.ndimage import gaussian_filter1d
 
@@ -134,7 +134,6 @@ class StemOrchestrator:
         if seg_sec is None or seg_sec <= 0:
             return None, None
         min_fade_sec = 2.0
-        fade_duration_sec = 2.5
         
         # Outgoing: first safe point that allows at least min_fade_sec for the fade
         phrase_a = phrase_ctx.get('phrase_data_a')

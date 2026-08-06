@@ -8,7 +8,7 @@ Implements human sound perception models:
 """
 import numpy as np
 import librosa
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Optional
 from scipy import signal
 
 
@@ -299,7 +299,6 @@ class PsychoacousticAnalyzer:
         Returns:
             Dict with clash prediction and recommendations
         """
-        import time, json
         
         
         # Use samples if audio is too long (for speed) - already sampled in caller
@@ -307,10 +306,10 @@ class PsychoacousticAnalyzer:
         
         
         # Analyze masking for both signals
-        mask_a = self.analyze_frequency_masking(y_a)
+        self.analyze_frequency_masking(y_a)
         
         
-        mask_b = self.analyze_frequency_masking(y_b)
+        self.analyze_frequency_masking(y_b)
         
         
         # Calculate mutual masking

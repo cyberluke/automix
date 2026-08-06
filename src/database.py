@@ -3,7 +3,6 @@ Database schema and utilities for storing song and transition analysis data.
 """
 import sqlite3
 import json
-import hashlib
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from datetime import datetime

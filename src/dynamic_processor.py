@@ -10,7 +10,7 @@ Intelligent frequency management during transitions:
 import numpy as np
 import librosa
 from scipy import signal
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, Tuple
 
 from src.psychoacoustics import PsychoacousticAnalyzer
 

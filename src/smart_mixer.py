@@ -306,6 +306,7 @@ class SmartMixer:
         y_a_clash = y_a[:sample_len]
         y_b_clash = y_b[:sample_len]
         clash_analysis = self.psychoacoustics.predict_frequency_clash(y_a_clash, y_b_clash)
+        clash_score = clash_analysis.get('clash_score', 0.5)
         
         technique = self.transition_strategist.select_technique(
             analysis_a['key'],

@@ -13,8 +13,6 @@ import librosa
 from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass, asdict
 from scipy.ndimage import gaussian_filter1d
-from scipy.signal import correlate
-from scipy.stats import pearsonr
 import json
 
 
@@ -155,7 +153,7 @@ class DeepTransitionAnalyzer:
         
         start_sample = int(start_sec * sr)
         end_sample = int(end_sec * sr)
-        trans_sample = int(trans.time_sec * sr)
+        int(trans.time_sec * sr)
         
         # Extract segment
         segment = y[start_sample:end_sample]
@@ -291,7 +289,7 @@ class DeepTransitionAnalyzer:
         nearest_idx = np.argmin(distances)
         nearest_distance = distances[nearest_idx]
         
-        beat_duration = 60 / tempo
+        60 / tempo
         
         # Beat aligned if within 50ms of a beat
         beat_aligned = nearest_distance < 0.05
@@ -306,7 +304,7 @@ class DeepTransitionAnalyzer:
                               sr: int,
                               trans_time: float) -> Dict:
         """Analyze volume/crossfade curves around transition."""
-        hop = self.hop_length
+        self.hop_length
         
         # Compute RMS in short frames
         frame_length = int(0.1 * sr)  # 100ms frames
@@ -350,7 +348,7 @@ class DeepTransitionAnalyzer:
         threshold_db = -20
         above_threshold = rms_db_smooth > threshold_db
         
-        fade_regions = np.diff(above_threshold.astype(int))
+        np.diff(above_threshold.astype(int))
         overlap_duration = 5.0  # Default estimate
         
         # Build curves for training data

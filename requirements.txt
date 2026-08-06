@@ -5,7 +5,7 @@ librosa==0.10.1
 numpy==1.26.4
 scipy==1.12.0
 soundfile==0.12.1
-yt-dlp==2024.03.10
+yt-dlp>=2024.03.10
 tqdm==4.66.2
 
 # Production server + abuse protection (gunicorn serves; limiter caps per-IP).

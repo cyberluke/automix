@@ -6,9 +6,8 @@ Instead of storing raw points, we store function parameters.
 """
 
 import numpy as np
-from typing import Dict, List, Tuple, Optional
+from typing import Dict
 from scipy.optimize import curve_fit
-from scipy.interpolate import interp1d
 
 
 class CurveParameterizer:
@@ -45,7 +44,6 @@ class CurveParameterizer:
         # Try different curve types
         best_fit = None
         best_r2 = -np.inf
-        best_type = "linear"
         
         # 1. Exponential decay/growth: y = a * exp(b*x) + c
         try:
@@ -66,7 +64,6 @@ class CurveParameterizer:
                 
                 if r2 > best_r2:
                     best_r2 = r2
-                    best_type = "exponential_decay"
                     best_fit = {
                         "type": "exponential_decay",
                         "params": {
@@ -94,7 +91,6 @@ class CurveParameterizer:
                 
                 if r2 > best_r2:
                     best_r2 = r2
-                    best_type = "exponential_growth"
                     best_fit = {
                         "type": "exponential_growth",
                         "params": {
@@ -116,7 +112,6 @@ class CurveParameterizer:
             
             if r2 > best_r2:
                 best_r2 = r2
-                best_type = "linear"
                 best_fit = {
                     "type": "linear",
                     "params": {
@@ -146,7 +141,6 @@ class CurveParameterizer:
             
             if r2 > best_r2:
                 best_r2 = r2
-                best_type = "logarithmic"
                 best_fit = {
                     "type": "logarithmic",
                     "params": {

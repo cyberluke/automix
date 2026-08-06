@@ -15,10 +15,10 @@ The key insight: transitions involve FOREIGN content entering, not just change.
 
 import numpy as np
 import librosa
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Optional
 from dataclasses import dataclass
-from scipy.ndimage import gaussian_filter1d, median_filter
-from scipy.signal import find_peaks, correlate
+from scipy.ndimage import gaussian_filter1d
+from scipy.signal import find_peaks
 from scipy.stats import entropy
 from scipy.spatial.distance import cosine
 

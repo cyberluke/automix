@@ -11,7 +11,7 @@ This module creates transitions that are genuinely novel - not just
 choosing from a fixed menu, but creating custom hybrid techniques.
 """
 import numpy as np
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Optional
 from scipy.ndimage import gaussian_filter1d
 import random
 
@@ -611,8 +611,8 @@ class HybridTechniqueBlender:
         tempo_diff = context.get('tempo_diff', 0)
         has_vocals_a = context.get('has_vocals_a', False)
         has_vocals_b = context.get('has_vocals_b', False)
-        section_a = context.get('section_a', '')
-        section_b = context.get('section_b', '')
+        context.get('section_a', '')
+        context.get('section_b', '')
         
         # Determine energy direction
         if energy_b > energy_a * 1.2:
@@ -741,7 +741,7 @@ class HybridTechniqueBlender:
             morph_path = [start_technique, end_technique]
         
         # Create weight curves for each technique
-        n_techniques = len(morph_path)
+        len(morph_path)
         stage_samples = transition_samples // morph_stages
         
         weight_curves = {tech: np.zeros(transition_samples) for tech in morph_path}

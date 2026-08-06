@@ -12,7 +12,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from typing import Dict, Tuple, List
+from typing import Dict, Tuple
 
 
 class DecisionNN(nn.Module):
@@ -97,7 +97,7 @@ class DecisionNN(nn.Module):
         Returns:
             Dictionary with all outputs
         """
-        batch_size = x.shape[0]
+        x.shape[0]
         
         # Handle key embeddings if provided separately
         if key_a is not None and key_b is not None:

@@ -9,7 +9,7 @@ Precise tempo synchronization and phase alignment:
 """
 import numpy as np
 import librosa
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, Tuple
 
 
 class AdvancedBeatMatcher:

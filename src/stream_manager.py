@@ -1,13 +1,10 @@
 import threading
 import queue
-import time
 import uuid
-from pathlib import Path
 from typing import List, Dict, Optional
 import librosa
 import numpy as np
 import soundfile as sf
-from concurrent.futures import ThreadPoolExecutor
 
 from src.smart_mixer import SmartMixer
 from src.youtube_downloader import download_youtube_audio

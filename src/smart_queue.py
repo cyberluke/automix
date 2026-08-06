@@ -1,9 +1,8 @@
-import os
 import subprocess
 import librosa
 import numpy as np
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict
 
 class SmartQueue:
     """

@@ -3,9 +3,8 @@ Analyze DJ mixes to identify tracks and extract transitions.
 """
 import librosa
 import numpy as np
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional
 from pathlib import Path
-import json
 from .song_analyzer import SongAnalyzer
 from .transition_detector import TransitionDetector
 from .transition_analyzer import TransitionAnalyzer

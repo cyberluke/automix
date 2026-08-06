@@ -8,7 +8,7 @@ Context-aware transition technique selection based on:
 - Genre/style
 """
 import random
-from typing import Dict, List, Optional
+from typing import Dict, List
 from dataclasses import dataclass
 
 from src.harmonic_analyzer import HarmonicAnalyzer

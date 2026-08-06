@@ -12,7 +12,6 @@ Human DJs can try 2-3 options. We try 100+.
 """
 import numpy as np
 from typing import Dict, List, Tuple, Optional, Callable
-from concurrent.futures import ThreadPoolExecutor
 import random
 import numba
 
@@ -187,7 +186,7 @@ class MonteCarloQualityOptimizer:
         
         Lighter weight than full quality assessment for speed.
         """
-        n_samples = len(output)
+        len(output)
         
         # Smoothness: spectral flux
         spectral_flux = self._calculate_spectral_flux(output)
@@ -393,7 +392,7 @@ class MonteCarloQualityOptimizer:
         actual_mid = y[mid_start:mid_end]
         
         # Simple crossfade reference
-        n = min(len(seg_a), len(seg_b), len(y))
+        min(len(seg_a), len(seg_b), len(y))
         alpha = 0.5
         expected_mid = seg_a[mid_start:mid_end] * (1-alpha) + seg_b[mid_start:mid_end] * alpha
         

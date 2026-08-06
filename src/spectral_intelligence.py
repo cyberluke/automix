@@ -11,7 +11,7 @@ This module prevents frequency fights and creates seamless blends.
 """
 import numpy as np
 import librosa
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, Tuple
 from scipy import signal
 from scipy.ndimage import gaussian_filter1d
 
