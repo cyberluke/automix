@@ -1,0 +1,439 @@
+{
+  "adjacency": {
+    "demo_tone_a.hero-a.16b": [
+      "demo_tone_b.hero-b.8b",
+      "demo_tone_b.hero-b.16b"
+    ],
+    "demo_tone_a.hero-a.32b": [
+      "demo_tone_b.hero-b.8b",
+      "demo_tone_b.hero-b.16b"
+    ],
+    "demo_tone_a.hero-a.8b": [
+      "demo_tone_b.hero-b.8b",
+      "demo_tone_b.hero-b.16b"
+    ],
+    "demo_tone_b.hero-b.16b": [
+      "demo_tone_a.hero-a.8b",
+      "demo_tone_a.hero-a.16b"
+    ],
+    "demo_tone_b.hero-b.32b": [
+      "demo_tone_a.hero-a.8b",
+      "demo_tone_a.hero-a.16b"
+    ],
+    "demo_tone_b.hero-b.8b": [
+      "demo_tone_a.hero-a.8b",
+      "demo_tone_a.hero-a.16b"
+    ]
+  },
+  "edges": [
+    {
+      "asset": "audio/transitions/9455a9b16590f00da7ac.wav",
+      "assetSamples": 50528,
+      "assetSha256": "9455a9b16590f00da7ac7a3f35f6cf12aa8055e9748f825f41ae7cab957a5a12",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 48128,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_a.hero-a.8b",
+      "id": "edge-demo_tone_a.hero-a.8b-to-demo_tone_b.hero-b.8b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 48128,
+        "t3Sample": 50528
+      },
+      "to": "demo_tone_b.hero-b.8b"
+    },
+    {
+      "asset": "audio/transitions/9455a9b16590f00da7ac.wav",
+      "assetSamples": 50528,
+      "assetSha256": "9455a9b16590f00da7ac7a3f35f6cf12aa8055e9748f825f41ae7cab957a5a12",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 48128,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_a.hero-a.8b",
+      "id": "edge-demo_tone_a.hero-a.8b-to-demo_tone_b.hero-b.16b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 48128,
+        "t3Sample": 50528
+      },
+      "to": "demo_tone_b.hero-b.16b"
+    },
+    {
+      "asset": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+      "assetSamples": 50528,
+      "assetSha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 48128,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_a.hero-a.16b",
+      "id": "edge-demo_tone_a.hero-a.16b-to-demo_tone_b.hero-b.8b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 48128,
+        "t3Sample": 50528
+      },
+      "to": "demo_tone_b.hero-b.8b"
+    },
+    {
+      "asset": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+      "assetSamples": 50528,
+      "assetSha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 48128,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_a.hero-a.16b",
+      "id": "edge-demo_tone_a.hero-a.16b-to-demo_tone_b.hero-b.16b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 48128,
+        "t3Sample": 50528
+      },
+      "to": "demo_tone_b.hero-b.16b"
+    },
+    {
+      "asset": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+      "assetSamples": 50528,
+      "assetSha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 48128,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_a.hero-a.32b",
+      "id": "edge-demo_tone_a.hero-a.32b-to-demo_tone_b.hero-b.8b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 48128,
+        "t3Sample": 50528
+      },
+      "to": "demo_tone_b.hero-b.8b"
+    },
+    {
+      "asset": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+      "assetSamples": 50528,
+      "assetSha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 48128,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_a.hero-a.32b",
+      "id": "edge-demo_tone_a.hero-a.32b-to-demo_tone_b.hero-b.16b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 48128,
+        "t3Sample": 50528
+      },
+      "to": "demo_tone_b.hero-b.16b"
+    },
+    {
+      "asset": "audio/transitions/f06077efae066657c5db.wav",
+      "assetSamples": 47456,
+      "assetSha256": "f06077efae066657c5dbf84ab20c97b765172cd4f1255dc89d3f9638741d8ed5",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 45056,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_b.hero-b.8b",
+      "id": "edge-demo_tone_b.hero-b.8b-to-demo_tone_a.hero-a.8b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 45056,
+        "t3Sample": 47456
+      },
+      "to": "demo_tone_a.hero-a.8b"
+    },
+    {
+      "asset": "audio/transitions/f06077efae066657c5db.wav",
+      "assetSamples": 47456,
+      "assetSha256": "f06077efae066657c5dbf84ab20c97b765172cd4f1255dc89d3f9638741d8ed5",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 45056,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_b.hero-b.8b",
+      "id": "edge-demo_tone_b.hero-b.8b-to-demo_tone_a.hero-a.16b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 45056,
+        "t3Sample": 47456
+      },
+      "to": "demo_tone_a.hero-a.16b"
+    },
+    {
+      "asset": "audio/transitions/4a64399e6d7f703531f0.wav",
+      "assetSamples": 47456,
+      "assetSha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 45056,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_b.hero-b.16b",
+      "id": "edge-demo_tone_b.hero-b.16b-to-demo_tone_a.hero-a.8b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 45056,
+        "t3Sample": 47456
+      },
+      "to": "demo_tone_a.hero-a.8b"
+    },
+    {
+      "asset": "audio/transitions/4a64399e6d7f703531f0.wav",
+      "assetSamples": 47456,
+      "assetSha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 45056,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_b.hero-b.16b",
+      "id": "edge-demo_tone_b.hero-b.16b-to-demo_tone_a.hero-a.16b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 45056,
+        "t3Sample": 47456
+      },
+      "to": "demo_tone_a.hero-a.16b"
+    },
+    {
+      "asset": "audio/transitions/4a64399e6d7f703531f0.wav",
+      "assetSamples": 47456,
+      "assetSha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 45056,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_b.hero-b.32b",
+      "id": "edge-demo_tone_b.hero-b.32b-to-demo_tone_a.hero-a.8b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 45056,
+        "t3Sample": 47456
+      },
+      "to": "demo_tone_a.hero-a.8b"
+    },
+    {
+      "asset": "audio/transitions/4a64399e6d7f703531f0.wav",
+      "assetSamples": 47456,
+      "assetSha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6",
+      "events": [
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 0,
+          "type": "transition.start"
+        },
+        {
+          "payload": {
+            "technique": "rewind"
+          },
+          "sample": 45056,
+          "type": "transition.switch"
+        }
+      ],
+      "from": "demo_tone_b.hero-b.32b",
+      "id": "edge-demo_tone_b.hero-b.32b-to-demo_tone_a.hero-a.16b-rewind",
+      "phraseSafe": true,
+      "quality": 0.95,
+      "schema": "hypermix.transition.v1",
+      "technique": "rewind",
+      "tempoContinuityRequired": false,
+      "timeline": {
+        "t1Sample": 0,
+        "t2Sample": 45056,
+        "t3Sample": 47456
+      },
+      "to": "demo_tone_a.hero-a.16b"
+    }
+  ],
+  "schema": "hypermix.edges.v1"
+}

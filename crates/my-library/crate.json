@@ -1,0 +1,385 @@
+{
+  "schema": "hypermix.crate.v1",
+  "id": "my-library",
+  "name": "My Library",
+  "version": "1.0.0",
+  "defaults": {
+    "phraseBars": 8,
+    "energy": {
+      "min": 0.2,
+      "max": 0.9
+    },
+    "allowedTechniques": [
+      "phrase_match",
+      "echo_cut",
+      "slam",
+      "backspin",
+      "drum_roll",
+      "loop_transition",
+      "stutter",
+      "power_up",
+      "power_down",
+      "rewind"
+    ],
+    "fallbackTransition": "rewind",
+    "deepMix": {
+      "preferredPhraseBars": [
+        16,
+        32,
+        64
+      ],
+      "maxPhraseBars": 128,
+      "entryKinds": [
+        "drop",
+        "hook"
+      ],
+      "exitKinds": [
+        "drop",
+        "hook"
+      ],
+      "skipIntro": true,
+      "skipBreakdown": true
+    }
+  },
+  "tracks": [
+    "music/Funk Tribu - Hold On Official Visualizer.mp4",
+    "music/Funk Tribu Dillistone - where are you taking me mente Official V.mp4",
+    "music/Licking Floors in Raves.mp4",
+    "music/Malugi MCYL - Knees Break.mp4",
+    "music/Marlon Hoffstadt KIKI - Losing Control Official Audio.mp4",
+    "music/Ollie Lishman - Get This Sorted.mp4",
+    "music/Trip 2 Trancetown Thundercnts Original Mix.mp4",
+    "music/UEBERREST - Late Night Drive.mp4"
+  ],
+  "cues": {
+    "music/Funk Tribu - Hold On Official Visualizer.mp4": [
+      {
+        "id": "hero-Funk Tribu - Hold On Official Visualizer-1",
+        "kind": "hero",
+        "sample": 3220480,
+        "rating": 4.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Funk Tribu - Hold On Official Visualizer-2",
+        "kind": "hero",
+        "sample": 3855872,
+        "rating": 4.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Funk Tribu - Hold On Official Visualizer-3",
+        "kind": "hero",
+        "sample": 9108992,
+        "rating": 4.4,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ],
+    "music/Funk Tribu Dillistone - where are you taking me mente Official V.mp4": [
+      {
+        "id": "hero-Funk Tribu Dillistone - where are you taking me mente Official V-1",
+        "kind": "hero",
+        "sample": 6225408,
+        "rating": 6.3,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Funk Tribu Dillistone - where are you taking me mente Official V-2",
+        "kind": "hero",
+        "sample": 9961472,
+        "rating": 5.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Funk Tribu Dillistone - where are you taking me mente Official V-3",
+        "kind": "hero",
+        "sample": 1808384,
+        "rating": 4.9,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ],
+    "music/Licking Floors in Raves.mp4": [
+      {
+        "id": "hero-Licking Floors in Raves-1",
+        "kind": "hero",
+        "sample": 8621056,
+        "rating": 4.9,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Licking Floors in Raves-2",
+        "kind": "hero",
+        "sample": 596480,
+        "rating": 4.8,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Licking Floors in Raves-3",
+        "kind": "hero",
+        "sample": 3779584,
+        "rating": 4.8,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ],
+    "music/Malugi MCYL - Knees Break.mp4": [
+      {
+        "id": "hero-Malugi MCYL - Knees Break-1",
+        "kind": "hero",
+        "sample": 8252928,
+        "rating": 4.8,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Malugi MCYL - Knees Break-2",
+        "kind": "hero",
+        "sample": 10814464,
+        "rating": 4.7,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Malugi MCYL - Knees Break-3",
+        "kind": "hero",
+        "sample": 4488704,
+        "rating": 4.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ],
+    "music/Marlon Hoffstadt KIKI - Losing Control Official Audio.mp4": [
+      {
+        "id": "hero-Marlon Hoffstadt KIKI - Losing Control Official Audio-1",
+        "kind": "hero",
+        "sample": 6015488,
+        "rating": 5.0,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Marlon Hoffstadt KIKI - Losing Control Official Audio-2",
+        "kind": "hero",
+        "sample": 702976,
+        "rating": 4.9,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Marlon Hoffstadt KIKI - Losing Control Official Audio-3",
+        "kind": "hero",
+        "sample": 4439552,
+        "rating": 4.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ],
+    "music/Ollie Lishman - Get This Sorted.mp4": [
+      {
+        "id": "hero-Ollie Lishman - Get This Sorted-1",
+        "kind": "hero",
+        "sample": 1307136,
+        "rating": 5.8,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Ollie Lishman - Get This Sorted-2",
+        "kind": "hero",
+        "sample": 2578432,
+        "rating": 5.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Ollie Lishman - Get This Sorted-3",
+        "kind": "hero",
+        "sample": 12350464,
+        "rating": 5.2,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ],
+    "music/Trip 2 Trancetown Thundercnts Original Mix.mp4": [
+      {
+        "id": "hero-Trip 2 Trancetown Thundercnts Original Mix-1",
+        "kind": "hero",
+        "sample": 3733504,
+        "rating": 4.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Trip 2 Trancetown Thundercnts Original Mix-2",
+        "kind": "hero",
+        "sample": 20092416,
+        "rating": 4.5,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-Trip 2 Trancetown Thundercnts Original Mix-3",
+        "kind": "hero",
+        "sample": 16330752,
+        "rating": 4.4,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ],
+    "music/UEBERREST - Late Night Drive.mp4": [
+      {
+        "id": "hero-UEBERREST - Late Night Drive-1",
+        "kind": "hero",
+        "sample": 9239552,
+        "rating": 5.4,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-UEBERREST - Late Night Drive-2",
+        "kind": "hero",
+        "sample": 4296192,
+        "rating": 5.2,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      },
+      {
+        "id": "hero-UEBERREST - Late Night Drive-3",
+        "kind": "hero",
+        "sample": 23552,
+        "rating": 5.1,
+        "snap": "nearestBar",
+        "isDropEntry": true,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ]
+      }
+    ]
+  },
+  "edges": []
+}

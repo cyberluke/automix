@@ -1,0 +1,583 @@
+{
+  "cues": {
+    "music/Funk Tribu - Hold On Official Visualizer.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Funk Tribu - Hold On Official Visualizer-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.5,
+        "sample": 3220480,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Funk Tribu - Hold On Official Visualizer-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.5,
+        "sample": 3855872,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Funk Tribu - Hold On Official Visualizer-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.4,
+        "sample": 9108992,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "music/Funk Tribu Dillistone - where are you taking me mente Official V.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Funk Tribu Dillistone - where are you taking me mente Official V-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 6.3,
+        "sample": 6225408,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Funk Tribu Dillistone - where are you taking me mente Official V-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.5,
+        "sample": 9961472,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Funk Tribu Dillistone - where are you taking me mente Official V-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.9,
+        "sample": 1808384,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "music/Licking Floors in Raves.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Licking Floors in Raves-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.9,
+        "sample": 8621056,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Licking Floors in Raves-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.8,
+        "sample": 596480,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Licking Floors in Raves-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.8,
+        "sample": 3779584,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "music/Malugi MCYL - Knees Break.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Malugi MCYL - Knees Break-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.8,
+        "sample": 8252928,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Malugi MCYL - Knees Break-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.7,
+        "sample": 10814464,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Malugi MCYL - Knees Break-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.5,
+        "sample": 4488704,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "music/Marlon Hoffstadt KIKI - Losing Control Official Audio.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Marlon Hoffstadt KIKI - Losing Control Official Audio-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.0,
+        "sample": 6015488,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Marlon Hoffstadt KIKI - Losing Control Official Audio-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.9,
+        "sample": 702976,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Marlon Hoffstadt KIKI - Losing Control Official Audio-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.5,
+        "sample": 4439552,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "music/Ollie Lishman - Get This Sorted.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Ollie Lishman - Get This Sorted-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.8,
+        "sample": 1307136,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Ollie Lishman - Get This Sorted-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.5,
+        "sample": 2578432,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Ollie Lishman - Get This Sorted-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.2,
+        "sample": 12350464,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "music/Trip 2 Trancetown Thundercnts Original Mix.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Trip 2 Trancetown Thundercnts Original Mix-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.5,
+        "sample": 3733504,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Trip 2 Trancetown Thundercnts Original Mix-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.5,
+        "sample": 20092416,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-Trip 2 Trancetown Thundercnts Original Mix-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 4.4,
+        "sample": 16330752,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "music/UEBERREST - Late Night Drive.mp4": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-UEBERREST - Late Night Drive-1",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.4,
+        "sample": 9239552,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-UEBERREST - Late Night Drive-2",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.2,
+        "sample": 4296192,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      },
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-UEBERREST - Late Night Drive-3",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          16,
+          32,
+          64
+        ],
+        "rating": 5.1,
+        "sample": 23552,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ]
+  },
+  "defaults": {
+    "allowedTechniques": [
+      "phrase_match",
+      "echo_cut",
+      "slam",
+      "backspin",
+      "drum_roll",
+      "loop_transition",
+      "stutter",
+      "power_up",
+      "power_down",
+      "rewind"
+    ],
+    "energy": {
+      "max": 0.9,
+      "min": 0.2
+    },
+    "fallbackTransition": "rewind",
+    "phraseBars": 8
+  },
+  "edges": [],
+  "id": "my-library",
+  "name": "My Library",
+  "schema": "hypermix.crate.v1",
+  "tracks": [
+    "music/Funk Tribu - Hold On Official Visualizer.mp4",
+    "music/Funk Tribu Dillistone - where are you taking me mente Official V.mp4",
+    "music/Licking Floors in Raves.mp4",
+    "music/Malugi MCYL - Knees Break.mp4",
+    "music/Marlon Hoffstadt KIKI - Losing Control Official Audio.mp4",
+    "music/Ollie Lishman - Get This Sorted.mp4",
+    "music/Trip 2 Trancetown Thundercnts Original Mix.mp4",
+    "music/UEBERREST - Late Night Drive.mp4"
+  ],
+  "version": "1.0.0"
+}

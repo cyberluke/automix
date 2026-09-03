@@ -1,0 +1,54 @@
+{
+  "contributes": {
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "hypermix",
+          "title": "HyperMix",
+          "icon": "resources/hypermix.svg"
+        }
+      ]
+    },
+    "views": {
+      "hypermix": [
+        {
+          "id": "hypermix.mixView",
+          "name": "Mix",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "hypermix.openMix",
+        "title": "HyperMix: Open Mix",
+        "category": "HyperMix"
+      },
+      {
+        "command": "hypermix.compilePack",
+        "title": "HyperMix: Compile Pack",
+        "category": "HyperMix"
+      },
+      {
+        "command": "hypermix.renderGolden",
+        "title": "HyperMix: Render Golden Set",
+        "category": "HyperMix"
+      }
+    ],
+    "configuration": {
+      "title": "HyperMix",
+      "properties": {
+        "hypermix.sidecarPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to hypermixd.exe. Defaults to the bundled sidecar."
+        },
+        "hypermix.defaultSeed": {
+          "type": "number",
+          "default": 0,
+          "description": "Default director seed for deterministic sets."
+        }
+      }
+    }
+  }
+}

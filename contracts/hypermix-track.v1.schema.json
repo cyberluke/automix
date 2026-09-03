@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hypermix/schemas/hypermix-track.v1.schema.json",
+  "title": "HyperMix Track",
+  "type": "object",
+  "required": ["schema", "id"],
+  "properties": {
+    "schema": {"const": "hypermix.track.v1"},
+    "id": {"type": "string", "minLength": 1},
+    "artist": {"type": "string"},
+    "title": {"type": "string"},
+    "source": {
+      "type": ["object", "null"],
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": ["string", "null"]},
+        "canonicalSha256": {"type": ["string", "null"]}
+      }
+    },
+    "audio": {
+      "type": ["object", "null"],
+      "required": ["sampleRate", "channels", "samples"],
+      "properties": {
+        "sampleRate": {"type": "integer", "const": 48000},
+        "channels": {"type": "integer", "const": 2},
+        "samples": {"type": "integer", "minimum": 0},
+        "durationSec": {"type": "number", "minimum": 0}
+      }
+    },
+    "analysis": {
+      "type": ["object", "null"],
+      "properties": {
+        "bpm": {"type": "number"},
+        "beat_samples": {"type": "array", "items": {"type": "integer"}},
+        "downbeats": {"type": "array", "items": {"type": "integer"}},
+        "bars": {"type": "array", "items": {"type": "integer"}},
+        "phrases": {"type": "array", "items": {"type": "integer"}},
+        "bar_energy": {"type": "array", "items": {"type": "number"}},
+        "phrase_energy": {"type": "array", "items": {"type": "number"}},
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["start_sample", "end_sample", "label"],
+            "properties": {
+              "start_sample": {"type": "integer"},
+              "end_sample": {"type": "integer"},
+              "label": {"enum": ["high", "low"]},
+              "energy": {"type": "number"}
+            }
+          }
+        },
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "phrase_phase_offset_bars": {"type": "integer"}
+      }
+    },
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "energy": {"type": "number", "minimum": 0, "maximum": 1},
+    "cues": {
+      "type": "array",
+      "items": {"$ref": "hypermix-cue.v1.schema.json"}
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hypermix/schemas/hypermix-crate.v1.schema.json",
+  "title": "HyperMix Crate",
+  "type": "object",
+  "required": ["schema", "id", "tracks"],
+  "properties": {
+    "schema": {"const": "hypermix.crate.v1"},
+    "id": {"type": "string", "minLength": 1},
+    "title": {"type": "string"},
+    "defaults": {
+      "type": "object",
+      "properties": {
+        "phraseBars": {"enum": [4, 8, 16, 32]},
+        "preferredSegmentBars": {
+          "type": "array",
+          "items": {"enum": [4, 8, 16, 32]}
+        },
+        "fallbackTransition": {"type": "string"}
+      }
+    },
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trackFile"],
+        "properties": {
+          "trackFile": {"type": "string"},
+          "enabled": {"type": "boolean"},
+          "weight": {"type": "number", "minimum": 0}
+        }
+      },
+      "minItems": 1
+    },
+    "mood": {
+      "type": "object",
+      "properties": {
+        "tags": {"type": "array", "items": {"type": "string"}},
+        "energyMin": {"type": "number", "minimum": 0, "maximum": 1},
+        "energyMax": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "sequencing": {
+      "type": "object",
+      "properties": {
+        "allowRepeatTrack": {"type": "boolean"},
+        "maxConsecutiveArtist": {"type": "integer", "minimum": 1},
+        "seed": {"type": "integer"}
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "technique": {"type": "string"}
+        }
+      }
+    },
+    "allowedTransitions": {"type": "array", "items": {"type": "string"}},
+    "discovery": {"type": ["object", "null"]}
+  },
+  "additionalProperties": true
+}

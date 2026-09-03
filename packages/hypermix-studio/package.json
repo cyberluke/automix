@@ -1,0 +1,19 @@
+{
+  "name": "@hypermix/studio",
+  "version": "0.1.0",
+  "description": "HyperMix Studio — crate authoring webview UI (editor, waveforms, cues, transitions).",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hypermix/bridge": "file:../hypermix-bridge",
+    "@hypermix/player": "file:../hypermix-player"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

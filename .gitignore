@@ -23,6 +23,9 @@ wheels/
 .installed.cfg
 *.egg
 
+# Reference DSP sources (Eric Tarr/STK *.lib) kept local-only
+ref_*.lib
+
 # Audio files are never stored in the repo (copyright + size). The demo loops are
 # synthesized at build/run time by src/demo_samples.py; nothing here needs committing.
 *.wav
@@ -40,6 +43,10 @@ mixes/
 data/
 database/*.db
 database/*.db-journal
+
+# Generated local pack cache (music-folder change fingerprint); graph/crate/manifest
+# JSON under packs/ are tracked, but this per-build sidecar marker is local-only.
+packs/**/.source-manifest.json
 
 # IDE
 .vscode/
@@ -63,13 +70,38 @@ Thumbs.db
 tmp/
 temp/
 *.tmp
+*.part
 
+# Sensitive / local artifacts never committed
+www.youtube.com_cookies.txt
+nuitka-crash-report.xml
+*.cookies.txt
 
+# HyperMix — heavy generated data dirs (kept empty via .gitkeep)
+music/*
+!music/.gitkeep
+renders/*
+!renders/.gitkeep
+
+# Environment
 .venv/
+.venv-stems/
+.venv-hypermix/
+
 data/cache/
 set_*.wav
 club_blend*.wav
 
+.claude/
 *.part
 
-.claude/
+# HyperMix — private artifacts never committed
+crates/private/
+packs/private/
+packs/*/assets/
+*.hmxpack
+node_modules/
+packages/*/dist/
+dist/integration-bundle/
+# Demo fixtures are generated (scripts/generate_demo_fixtures.py), not committed
+data/fixtures/demo_tone_*.wav

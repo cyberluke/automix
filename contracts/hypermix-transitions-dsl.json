@@ -1,0 +1,88 @@
+{
+  "schema": "hypermix.transitions.dsl.v1",
+  "transitions": [
+    {
+      "id": "rewind_drop",
+      "capabilities": {"supportsHotSwap": true, "tempoContinuityRequired": false, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["hero", "drop", "hook"]},
+      "timing": {"anchor": "nextPhrase"},
+      "fx": [
+        {"type": "sourceReverse", "bars": 0.5},
+        {"type": "filter", "mode": "highpass", "fromHz": 80, "toHz": 3000}
+      ],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": true, "preferredKinds": ["drop", "hero"]},
+      "fallback": ["slam"]
+    },
+    {
+      "id": "slam",
+      "capabilities": {"supportsHotSwap": true, "tempoContinuityRequired": false, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["hero", "drop", "hook", "outro"]},
+      "timing": {"anchor": "nextPhrase"},
+      "fx": [{"type": "splice", "tailMs": 30}],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": true, "preferredKinds": ["drop", "hero"]},
+      "fallback": []
+    },
+    {
+      "id": "echo_cut",
+      "capabilities": {"supportsHotSwap": true, "tempoContinuityRequired": false, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["hero", "hook", "vocal"]},
+      "timing": {"anchor": "nextPhrase"},
+      "fx": [{"type": "echo", "beatFraction": 0.75, "feedback": 0.45, "tailSec": 1.5}],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": false, "preferredKinds": ["drop", "hero", "build"]},
+      "fallback": ["slam", "rewind"]
+    },
+    {
+      "id": "stutter",
+      "capabilities": {"supportsHotSwap": true, "tempoContinuityRequired": false, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["hero", "drop"]},
+      "timing": {"anchor": "nextPhrase"},
+      "fx": [{"type": "stutter", "pattern": [["1/4", 2], ["1/8", 4], ["1/16", 8]]}],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": true, "preferredKinds": ["drop", "hero"]},
+      "fallback": ["slam"]
+    },
+    {
+      "id": "backspin",
+      "capabilities": {"supportsHotSwap": true, "tempoContinuityRequired": false, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["hero", "hook"]},
+      "timing": {"anchor": "nextBar"},
+      "fx": [{"type": "variableRate", "from": 1.0, "to": 0.15, "curve": "quadratic"}],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": true, "preferredKinds": ["drop", "hero"]},
+      "fallback": ["rewind", "slam"]
+    },
+    {
+      "id": "drum_roll",
+      "capabilities": {"supportsHotSwap": true, "tempoContinuityRequired": false, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["build", "breakdown"]},
+      "timing": {"anchor": "nextPhrase"},
+      "fx": [{"type": "drumRoll", "bars": 2.0, "subdivs": [0.5, 0.25, 0.125, 0.0625]}],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": true, "preferredKinds": ["drop", "hero"]},
+      "fallback": ["stutter", "slam"]
+    },
+    {
+      "id": "phrase_match",
+      "capabilities": {"supportsHotSwap": false, "tempoContinuityRequired": true, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["breakdown", "outro", "hero"]},
+      "timing": {"anchor": "nextPhrase"},
+      "fx": [{"type": "equalPowerBlend", "bars": 8}, {"type": "bassHandoff", "crossHz": 200}],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": true, "preferredKinds": ["intro", "build", "hero"]},
+      "fallback": ["rewind"]
+    },
+    {
+      "id": "double_drop",
+      "capabilities": {"supportsHotSwap": false, "tempoContinuityRequired": true, "requiresStems": false},
+      "outgoing": {"allowedKinds": ["build", "drop"]},
+      "timing": {"anchor": "nextPhrase"},
+      "fx": [{"type": "alignImpacts"}, {"type": "bassCollisionControl", "crossHz": 200}],
+      "switch": {"at": "t2"},
+      "incoming": {"requireDownbeat": true, "preferredKinds": ["drop"]},
+      "fallback": ["slam", "rewind"]
+    }
+  ]
+}

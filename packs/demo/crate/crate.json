@@ -1,0 +1,70 @@
+{
+  "cues": {
+    "data/fixtures/demo_tone_a.wav": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-a",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          8,
+          16,
+          32
+        ],
+        "rating": 7.0,
+        "sample": 384000,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ],
+    "data/fixtures/demo_tone_b.wav": [
+      {
+        "allowedEntry": true,
+        "allowedExit": true,
+        "bar": null,
+        "beat": null,
+        "energy": 0.0,
+        "id": "hero-b",
+        "kind": "hero",
+        "locked": false,
+        "notes": "",
+        "phrase": null,
+        "preferredBars": [
+          8,
+          16,
+          32
+        ],
+        "rating": 8.0,
+        "sample": 384000,
+        "snap": "nearestBar",
+        "stale": false,
+        "tags": []
+      }
+    ]
+  },
+  "defaults": {
+    "allowedTechniques": [],
+    "energy": {
+      "max": 1.0,
+      "min": 0.0
+    },
+    "fallbackTransition": "rewind",
+    "phraseBars": 8
+  },
+  "edges": [],
+  "id": "demo-crate",
+  "name": "HyperMix Demo Crate",
+  "schema": "hypermix.crate.v1",
+  "tracks": [
+    "data/fixtures/demo_tone_a.wav",
+    "data/fixtures/demo_tone_b.wav"
+  ],
+  "version": "0.1.0"
+}

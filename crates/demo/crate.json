@@ -1,0 +1,25 @@
+{
+  "schema": "hypermix.crate.v1",
+  "id": "demo-crate",
+  "name": "HyperMix Demo Crate",
+  "version": "0.1.0",
+  "defaults": {
+    "phraseBars": 8,
+    "energy": { "min": 0.0, "max": 1.0 },
+    "allowedTechniques": [],
+    "fallbackTransition": "rewind"
+  },
+  "tracks": [
+    "data/fixtures/demo_tone_a.wav",
+    "data/fixtures/demo_tone_b.wav"
+  ],
+  "cues": {
+    "data/fixtures/demo_tone_a.wav": [
+      { "id": "hero-a", "kind": "hero", "sample": 384000, "rating": 7.0, "snap": "nearestBar" }
+    ],
+    "data/fixtures/demo_tone_b.wav": [
+      { "id": "hero-b", "kind": "hero", "sample": 384000, "rating": 8.0, "snap": "nearestBar" }
+    ]
+  },
+  "edges": []
+}

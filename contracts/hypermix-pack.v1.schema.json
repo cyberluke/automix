@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hypermix/schemas/hypermix-pack.v1.schema.json",
+  "title": "HyperMix Pack Manifest",
+  "type": "object",
+  "required": [
+    "schema", "packId", "version", "sampleRate", "channels",
+    "segments", "transitions", "graph", "entrySegments",
+    "fallbackTransition", "integrity"
+  ],
+  "properties": {
+    "schema": {"const": "hypermix.pack.v1"},
+    "packId": {"type": "string", "minLength": 1},
+    "version": {"type": "integer", "minimum": 1},
+    "sampleRate": {"type": "integer", "const": 48000},
+    "channels": {"type": "integer", "const": 2},
+    "createdBy": {
+      "type": "object",
+      "properties": {
+        "compiler": {"type": "string"},
+        "compilerVersion": {"type": "string"},
+        "pythonVersion": {"type": "string"},
+        "ffmpegVersion": {"type": "string"},
+        "configHash": {"type": "string"},
+        "crateSha256": {"type": "string"},
+        "seed": {"type": "integer"},
+        "gitSha": {"type": "string"}
+      }
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "trackId", "startSample", "endSample", "bars", "bpm"],
+        "properties": {
+          "id": {"type": "string"},
+          "trackId": {"type": "string"},
+          "startSample": {"type": "integer", "minimum": 0},
+          "endSample": {"type": "integer", "minimum": 0},
+          "lengthSamples": {"type": "integer", "minimum": 0},
+          "bars": {"type": "integer"},
+          "bpm": {"type": "number"},
+          "entryClass": {"type": "string"},
+          "exitClass": {"type": "string"},
+          "energyStart": {"type": "number"},
+          "energyEnd": {"type": "number"},
+          "rating": {"type": "number"},
+          "tags": {"type": "array", "items": {"type": "string"}},
+          "asset": {"type": "string"},
+          "assetSha256": {"type": "string"},
+          "assetSamples": {"type": "integer"}
+        }
+      }
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "from", "to", "technique", "timeline"],
+        "properties": {
+          "schema": {"const": "hypermix.transition.v1"},
+          "id": {"type": "string"},
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "technique": {"type": "string"},
+          "timeline": {
+            "type": "object",
+            "required": ["t1Sample", "t2Sample", "t3Sample"],
+            "properties": {
+              "t1Sample": {"type": "integer", "minimum": 0},
+              "t2Sample": {"type": "integer", "minimum": 0},
+              "t3Sample": {"type": "integer", "minimum": 0}
+            }
+          },
+          "tempoContinuityRequired": {"type": "boolean"},
+          "phraseSafe": {"type": "boolean"},
+          "quality": {"type": "number"},
+          "asset": {"type": "string"},
+          "assetSha256": {"type": "string"},
+          "assetSamples": {"type": "integer"},
+          "events": {"type": "array", "items": {"$ref": "hypermix-events.v1.schema.json#/definitions/event"}}
+        }
+      }
+    },
+    "graph": {
+      "type": "object",
+      "additionalProperties": {"type": "array", "items": {"type": "string"}}
+    },
+    "events": {"type": "array", "items": {"$ref": "hypermix-events.v1.schema.json#/definitions/event"}},
+    "entrySegments": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "fallbackTransition": {"type": "string"},
+    "integrity": {
+      "type": "object",
+      "required": ["manifestSha256", "assets"],
+      "properties": {
+        "manifestSha256": {"type": "string"},
+        "assets": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["sha256", "bytes"],
+            "properties": {
+              "sha256": {"type": "string"},
+              "bytes": {"type": "integer", "minimum": 0},
+              "samples": {"type": "integer", "minimum": 0}
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

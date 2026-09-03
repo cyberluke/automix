@@ -1,0 +1,7 @@
+# HyperMix compiler/sidecar pinned requirements (separate from legacy runtime).
+# Pinned for Python 3.14 on Windows (wheels available; no Fortran toolchain needed).
+numpy==2.4.6
+scipy==1.18.0
+soundfile==0.14.0
+librosa==0.11.0
+tqdm==4.70.0

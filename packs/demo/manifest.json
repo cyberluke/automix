@@ -1,0 +1,150 @@
+{
+  "channels": 2,
+  "edges": 12,
+  "entrySegments": [
+    "demo_tone_b.hero-b.8b",
+    "demo_tone_b.hero-b.16b",
+    "demo_tone_b.hero-b.32b",
+    "demo_tone_a.hero-a.8b"
+  ],
+  "fallbackTransition": "rewind",
+  "id": "demo-crate",
+  "integrity": {
+    "assets": [
+      {
+        "bytes": 9216056,
+        "path": "audio/segments/1a742ad7f7ad628342e5.wav",
+        "samples": 1152000,
+        "sha256": "1a742ad7f7ad628342e5e05ffc58ff894b5ebac98ebba99135a8ee8495b428b6"
+      },
+      {
+        "bytes": 9216056,
+        "path": "audio/segments/1a742ad7f7ad628342e5.wav",
+        "samples": 1152000,
+        "sha256": "1a742ad7f7ad628342e5e05ffc58ff894b5ebac98ebba99135a8ee8495b428b6"
+      },
+      {
+        "bytes": 6160440,
+        "path": "audio/segments/25ab060e2ac25f6e6cae.wav",
+        "samples": 770048,
+        "sha256": "25ab060e2ac25f6e6caed19830f33b43aa0a3b80d093f2d52b36139c14450a5d"
+      },
+      {
+        "bytes": 9216056,
+        "path": "audio/segments/5295a2e9ec749bfd4e5a.wav",
+        "samples": 1152000,
+        "sha256": "5295a2e9ec749bfd4e5acf1576f85583f433496457e7936d4d729d11f34a7913"
+      },
+      {
+        "bytes": 9216056,
+        "path": "audio/segments/5295a2e9ec749bfd4e5a.wav",
+        "samples": 1152000,
+        "sha256": "5295a2e9ec749bfd4e5acf1576f85583f433496457e7936d4d729d11f34a7913"
+      },
+      {
+        "bytes": 5767224,
+        "path": "audio/segments/b3f49141122bbc186294.wav",
+        "samples": 720896,
+        "sha256": "b3f49141122bbc186294b3a2ee708e2d5693217f774ea09af6d7de29b7a0c96c"
+      },
+      {
+        "bytes": 379704,
+        "path": "audio/transitions/4a64399e6d7f703531f0.wav",
+        "samples": 47456,
+        "sha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6"
+      },
+      {
+        "bytes": 379704,
+        "path": "audio/transitions/4a64399e6d7f703531f0.wav",
+        "samples": 47456,
+        "sha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6"
+      },
+      {
+        "bytes": 379704,
+        "path": "audio/transitions/4a64399e6d7f703531f0.wav",
+        "samples": 47456,
+        "sha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6"
+      },
+      {
+        "bytes": 379704,
+        "path": "audio/transitions/4a64399e6d7f703531f0.wav",
+        "samples": 47456,
+        "sha256": "4a64399e6d7f703531f0122ad165ccc33f3211c0eb264f34bf730ef9b6897da6"
+      },
+      {
+        "bytes": 404280,
+        "path": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+        "samples": 50528,
+        "sha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480"
+      },
+      {
+        "bytes": 404280,
+        "path": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+        "samples": 50528,
+        "sha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480"
+      },
+      {
+        "bytes": 404280,
+        "path": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+        "samples": 50528,
+        "sha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480"
+      },
+      {
+        "bytes": 404280,
+        "path": "audio/transitions/6f5faa47d6339bef4e7d.wav",
+        "samples": 50528,
+        "sha256": "6f5faa47d6339bef4e7dde902158efa66bc3a71517066f2203432c051b9a1480"
+      },
+      {
+        "bytes": 404280,
+        "path": "audio/transitions/9455a9b16590f00da7ac.wav",
+        "samples": 50528,
+        "sha256": "9455a9b16590f00da7ac7a3f35f6cf12aa8055e9748f825f41ae7cab957a5a12"
+      },
+      {
+        "bytes": 404280,
+        "path": "audio/transitions/9455a9b16590f00da7ac.wav",
+        "samples": 50528,
+        "sha256": "9455a9b16590f00da7ac7a3f35f6cf12aa8055e9748f825f41ae7cab957a5a12"
+      },
+      {
+        "bytes": 379704,
+        "path": "audio/transitions/f06077efae066657c5db.wav",
+        "samples": 47456,
+        "sha256": "f06077efae066657c5dbf84ab20c97b765172cd4f1255dc89d3f9638741d8ed5"
+      },
+      {
+        "bytes": 379704,
+        "path": "audio/transitions/f06077efae066657c5db.wav",
+        "samples": 47456,
+        "sha256": "f06077efae066657c5dbf84ab20c97b765172cd4f1255dc89d3f9638741d8ed5"
+      },
+      {
+        "bytes": 1409,
+        "path": "crate/crate.json",
+        "sha256": "21bb36d4fe2471e6906f4d4f36ae61d269c0a1a10120455340873d95edc07ba5"
+      },
+      {
+        "bytes": 11973,
+        "path": "graph/edges.json",
+        "sha256": "e6182a7251dee4823d6a182b9bf32e35cf0bfb587f54fd099c546d48c6f11196"
+      },
+      {
+        "bytes": 837,
+        "path": "graph/graph.json",
+        "sha256": "c7b773fc3093485973bb5587e520e5232d9f56a274c8d029b41eb23b32dcacc8"
+      },
+      {
+        "bytes": 3347,
+        "path": "graph/segments.json",
+        "sha256": "1bd9a53d7171e2a4c4bf9dd2beb0e176c6c46be45eb47f7fec9b43c06eb2bc85"
+      }
+    ],
+    "manifestSha256": "f76bd4080edeadf9c279524fd8ef6e73ded23af8ddea11b80122c753d39896b1"
+  },
+  "name": "HyperMix Demo Crate",
+  "sampleRate": 48000,
+  "schema": "hypermix.pack.v1",
+  "segments": 6,
+  "version": "0.1.0"
+}

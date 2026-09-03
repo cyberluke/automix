@@ -1,0 +1,36 @@
+{
+  "adjacency": {
+    "demo_tone_a.hero-a.16b": [
+      "demo_tone_b.hero-b.8b",
+      "demo_tone_b.hero-b.16b"
+    ],
+    "demo_tone_a.hero-a.32b": [
+      "demo_tone_b.hero-b.8b",
+      "demo_tone_b.hero-b.16b"
+    ],
+    "demo_tone_a.hero-a.8b": [
+      "demo_tone_b.hero-b.8b",
+      "demo_tone_b.hero-b.16b"
+    ],
+    "demo_tone_b.hero-b.16b": [
+      "demo_tone_a.hero-a.8b",
+      "demo_tone_a.hero-a.16b"
+    ],
+    "demo_tone_b.hero-b.32b": [
+      "demo_tone_a.hero-a.8b",
+      "demo_tone_a.hero-a.16b"
+    ],
+    "demo_tone_b.hero-b.8b": [
+      "demo_tone_a.hero-a.8b",
+      "demo_tone_a.hero-a.16b"
+    ]
+  },
+  "entrySegments": [
+    "demo_tone_b.hero-b.8b",
+    "demo_tone_b.hero-b.16b",
+    "demo_tone_b.hero-b.32b",
+    "demo_tone_a.hero-a.8b"
+  ],
+  "fallbackTransition": "rewind",
+  "schema": "hypermix.graph.v1"
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hypermix/schemas/hypermix-sidecar.v1.schema.json",
+  "title": "HyperMix Sidecar Protocol (JSON-RPC 2.0 over NDJSON)",
+  "definitions": {
+    "request": {
+      "type": "object",
+      "required": ["jsonrpc", "id", "method"],
+      "properties": {
+        "jsonrpc": {"const": "2.0"},
+        "id": {"type": ["string", "integer"]},
+        "method": {
+          "enum": [
+            "health", "capabilities",
+            "track.import", "track.analyze", "track.get",
+            "crate.open", "crate.save",
+            "transition.preview",
+            "pack.compile", "pack.inspect", "pack.renderGolden",
+            "cache.stats", "cache.prune",
+            "diagnostics.snapshot",
+            "operation.cancel", "shutdown"
+          ]
+        },
+        "params": {"type": "object"}
+      }
+    },
+    "response": {
+      "type": "object",
+      "required": ["jsonrpc", "id"],
+      "properties": {
+        "jsonrpc": {"const": "2.0"},
+        "id": {"type": ["string", "integer", "null"]},
+        "result": {},
+        "error": {
+          "type": "object",
+          "required": ["code", "message"],
+          "properties": {
+            "code": {"type": "string"},
+            "message": {"type": "string"},
+            "data": {}
+          }
+        }
+      }
+    },
+    "progressEvent": {
+      "type": "object",
+      "required": ["jsonrpc", "method", "params"],
+      "properties": {
+        "jsonrpc": {"const": "2.0"},
+        "method": {"const": "event.progress"},
+        "params": {
+          "type": "object",
+          "required": ["operationId", "phase", "done", "total"],
+          "properties": {
+            "operationId": {"type": "string"},
+            "phase": {"type": "string"},
+            "done": {"type": "integer"},
+            "total": {"type": "integer"}
+          }
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {"$ref": "#/definitions/request"},
+    {"$ref": "#/definitions/response"},
+    {"$ref": "#/definitions/progressEvent"}
+  ]
+}

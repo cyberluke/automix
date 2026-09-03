@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hypermix/schemas/hypermix-transition.v1.schema.json",
+  "title": "HyperMix Transition Edge",
+  "type": "object",
+  "required": ["schema", "id", "from", "to", "technique", "timeline"],
+  "properties": {
+    "schema": {"const": "hypermix.transition.v1"},
+    "id": {"type": "string"},
+    "from": {"type": "string"},
+    "to": {"type": "string"},
+    "technique": {"type": "string"},
+    "timeline": {
+      "type": "object",
+      "required": ["t1Sample", "t2Sample", "t3Sample"],
+      "properties": {
+        "t1Sample": {"type": "integer", "minimum": 0},
+        "t2Sample": {"type": "integer", "minimum": 0},
+        "t3Sample": {"type": "integer", "minimum": 0}
+      }
+    },
+    "tempoContinuityRequired": {"type": "boolean"},
+    "phraseSafe": {"type": "boolean"},
+    "quality": {"type": "number", "minimum": 0, "maximum": 1},
+    "asset": {"type": ["string", "null"]},
+    "assetSha256": {"type": ["string", "null"]},
+    "assetSamples": {"type": ["integer", "null"]},
+    "events": {"type": "array"}
+  },
+  "additionalProperties": true
+}
